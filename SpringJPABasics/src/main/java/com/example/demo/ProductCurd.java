@@ -23,7 +23,7 @@ public class ProductCurd {
 		p.setPnam("promax");
 		prepo.save(p);
 	}
-	public List<Product> getAllProducts(int n)
+	public List<Product> getAllProducts()
 	{
 		return prepo.findAll();
 	}

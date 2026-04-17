@@ -15,6 +15,8 @@ public class SpringJpaBasicsApplication {
 		ProductCurd pr = (ProductCurd) con.getBean(ProductCurd.class);
 		pr.addProduct();
 		pr.getProductsById(1).forEach(System.out::println);
+		System.out.println("*************Printing all ****************");
+		pr.getAllProducts().forEach(System.out::println);
 	}
 
 }

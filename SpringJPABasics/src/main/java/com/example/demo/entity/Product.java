@@ -25,5 +25,10 @@ public class Product {
 	public void setPnam(String pnam) {
 		this.pnam = pnam;
 	}
+	@Override
+	public String toString()
+	{
+	    return "Product [pid=" + pid + ", pnam=" + pnam + "]";
+	}
 
 }
