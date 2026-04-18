@@ -42,5 +42,21 @@ public class ProductCurd {
 	{
 		return prepo.findByPnamAndPid(pnam, pid);
 	}
+	
+	//update product is main task in JPA
+	//------------------------------------------------------------------
+	
+	//there are two options in updating, where we use the existed data to update it.
+	
+	public void updateProduct()
+	{
+//		Product p=new Product();
+//		p.setPid(129);
+//		p.setPnam("iphoneeeepromax");
+//		prepo.save(p);
+	}
+	
+	//but majority cases above wont work, since the object with same id exists or may not exists
+	//refer to employee class for best output.0
 
 }
